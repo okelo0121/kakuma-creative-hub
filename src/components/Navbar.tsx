@@ -73,9 +73,13 @@ const Navbar = () => {
           </Link>
 
           {Object.entries(dropdowns).map(([key, dd]) => (
-            <div key={key} className="relative">
+            <div
+              key={key}
+              className="relative"
+              onMouseEnter={() => setOpenDropdown(key)}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
               <button
-                onClick={() => toggleDropdown(key)}
                 className={cn(
                   "flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-muted",
                   openDropdown === key && "bg-primary/10 text-primary"
