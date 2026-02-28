@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const dropdowns = {
   about: {
@@ -53,16 +54,14 @@ const Navbar = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2" onClick={closeAll}>
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-display font-bold text-lg">
-            K
-          </div>
+          <img src={logo} alt="Kakuma Made Creative logo" className="h-10 w-10 object-contain" />
           <span className="font-display text-lg font-bold text-foreground hidden sm:inline">
             Kakuma Made Creative
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1">
           <Link
             to="/"
             className={cn(
@@ -79,7 +78,7 @@ const Navbar = () => {
                 onClick={() => toggleDropdown(key)}
                 className={cn(
                   "flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-muted",
-                  openDropdown === key && "bg-muted"
+                  openDropdown === key && "bg-primary/10 text-primary"
                 )}
               >
                 {dd.label}
@@ -144,14 +143,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button className="lg:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-border bg-background px-4 pb-4">
+        <div className="md:hidden border-t border-border bg-background px-4 pb-4">
           <Link to="/" onClick={closeAll} className="block py-2 text-sm font-medium hover:text-primary">Home</Link>
 
           {Object.entries(dropdowns).map(([key, dd]) => (
