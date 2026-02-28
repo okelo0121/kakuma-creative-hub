@@ -4,6 +4,8 @@ import { Palette, BookOpen, Leaf, Camera, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useCountUp } from "@/hooks/useCountUp";
+import heroImg from "@/assets/hero.jpg";
+import missionBg from "@/assets/mission-bg.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -40,8 +42,9 @@ const Index = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sunset-brown via-sunset-deep to-sunset-orange py-24 md:py-36 text-sunset-cream">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(45_90%_58%/0.15),transparent_60%)]" />
+      <section className="relative overflow-hidden py-24 md:py-36 text-sunset-cream">
+        <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-sunset-brown/85 via-sunset-deep/75 to-sunset-orange/60" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -119,8 +122,10 @@ const Index = () => {
       </section>
 
       {/* Donate CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary to-sunset-deep text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative py-20 text-primary-foreground overflow-hidden">
+        <img src={missionBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-sunset-deep/80" />
+        <div className="container mx-auto px-4 text-center relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Support Our Mission</h2>
             <p className="max-w-xl mx-auto mb-8 opacity-90">
