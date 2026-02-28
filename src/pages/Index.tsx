@@ -122,9 +122,9 @@ const Index = () => {
       </section>
 
       {/* Donate CTA */}
-      <section className="relative py-20 text-primary-foreground overflow-hidden">
+      <section className="relative py-28 md:py-36 text-primary-foreground overflow-hidden">
         <img src={missionBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-sunset-deep/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-sunset-deep/50" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Support Our Mission</h2>
