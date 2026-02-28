@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# Kakuma Made Creative Hub
 
-## Project info
+Welcome to the **Kakuma Made Creative Hub** repository. 
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Kakuma Made Creative is a youth-led initiative based in Kakuma Refugee Camp, Kenya. We work with refugees and host-community youth to unlock creativity, build skills, and create positive social impact through art, design, education, environmental action, and storytelling.
 
-## How can I edit this code?
+## 🚀 Tech Stack
 
-There are several ways of editing your application.
+This project is a modern Single Page Application (SPA) built with:
+- **[React](https://reactjs.org/)** (v18)
+- **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+- **[TypeScript](https://www.typescriptlang.org/)** - For robust, type-safe code
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework for rapid UI development
+- **[Shadcn UI](https://ui.shadcn.com/)** - Beautifully designed, accessible components built on top of Radix UI
+- **[Framer Motion](https://www.framer.com/motion/)** - For smooth, physics-based animations
+- **[React Router](https://reactrouter.com/)** - Declarative routing for React
 
-**Use Lovable**
+## 📁 Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- `/src/pages` - Core page components (Home, Programs, About, Donate, etc.)
+- `/src/components` - Reusable UI elements, global layout components (Navbar, Footer), and Shadcn base components
+- `/src/assets` - Static assets including images, icons, and logos
+- `/src/hooks` - Custom React hooks (e.g., `useCountUp` for animated stats)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Local Development
 
-**Use your preferred IDE**
+To run this project locally, you will need **Node.js** installed on your machine.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository** (if you haven't already):
+   ```bash
+   git clone <repository-url>
+   cd kakuma-creative-hub
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   The app will typically be available at `http://localhost:8080`.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📦 Building for Production
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To create a production-ready build:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+This commands compiles and minifies the application into the `dist` directory, optimizing it for performance.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌐 Deployment Configuration
 
-**Use GitHub Codespaces**
+This project includes proper routing fallback configurations for SPA deployments to ensure direct page links do not return a 404 error:
+- `public/_redirects` (For Netlify, Cloudflare Pages)
+- `vercel.json` (For Vercel)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+We welcome contributions! Please follow standard pull request workflows to safely introduce changes to the codebase. When adding new UI components or modifying existing ones, be sure to utilize the established Tailwind and Shadcn patterns to maintain design consistency.

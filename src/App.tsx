@@ -6,7 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Programs from "./pages/Programs";
+import CreativeProjects from "./pages/programs/CreativeProjects";
+import Education from "./pages/programs/Education";
+import Environment from "./pages/programs/Environment";
+import Storytelling from "./pages/programs/Storytelling";
 import PeaceOutreach from "./pages/PeaceOutreach";
 import Impact from "./pages/Impact";
 import GetInvolved from "./pages/GetInvolved";
@@ -26,7 +29,10 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
-            <Route path="/programs" element={<Programs />} />
+            <Route path="/programs/creative-projects" element={<CreativeProjects />} />
+            <Route path="/programs/education" element={<Education />} />
+            <Route path="/programs/environment" element={<Environment />} />
+            <Route path="/programs/storytelling" element={<Storytelling />} />
             <Route path="/peace-outreach" element={<PeaceOutreach />} />
             <Route path="/impact" element={<Impact />} />
             <Route path="/get-involved" element={<GetInvolved />} />

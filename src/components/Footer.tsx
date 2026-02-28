@@ -19,7 +19,6 @@ const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-3">Quick Links</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li><Link to="/about" className="hover:opacity-100 transition-opacity">About Us</Link></li>
-              <li><Link to="/programs" className="hover:opacity-100 transition-opacity">Programs</Link></li>
               <li><Link to="/impact" className="hover:opacity-100 transition-opacity">Impact</Link></li>
               <li><Link to="/donate" className="hover:opacity-100 transition-opacity">Donate</Link></li>
               <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
