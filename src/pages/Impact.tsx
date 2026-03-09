@@ -7,10 +7,10 @@ const fadeUp = {
 };
 
 const stats = [
-  { label: "Youth engaged annually in creative and environmental projects", value: 100, suffix: "+" },
-  { label: "Children supported through remedial education", value: 50, suffix: "+" },
-  { label: "Recycled and upcycled products created", value: 30, suffix: "+" },
-  { label: "Community stories documented and shared", value: 20, suffix: "+" },
+  { label: "Youth engaged annually in creative and environmental projects", value: 400, suffix: "+" },
+  { label: "Children supported through remedial education", value: 250, suffix: "+" },
+  { label: "Recycled and upcycled products created", value: 300, suffix: "+" },
+  { label: "Community stories documented and shared", value: 150, suffix: "+" },
 ];
 
 const StatCard = ({ value, suffix, label }: { value: number; suffix: string; label: string }) => {
