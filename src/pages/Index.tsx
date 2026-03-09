@@ -250,19 +250,19 @@ const Index = () => {
               {/* Stat 1 with green icon background */}
               <div className="relative">
                 <div className="absolute -left-2 -top-2 w-10 h-10 bg-agave-DEFAULT/30 rounded-full blur-sm"></div>
-                <StatBlock value={16000} label="Meals served annually to host community" suffix="+" />
+              <StatBlock value={500} label="Meals served annually to host community" suffix="+" />
               </div>
               {/* Stat 2 */}
-              <StatBlock value={2} label="Million seedlings planted in Kakuma" suffix="mln+" />
+              <StatBlock value={350} label="Seedlings planted in Kakuma" suffix="+" />
               {/* Stat 3 with pinkish dot */}
               <div className="relative">
                 <div className="absolute -left-2 -top-2 w-10 h-10 bg-pink-500/30 rounded-full blur-sm"></div>
-                <StatBlock value={1694} label="Total families reached by our help" suffix="" />
+                <StatBlock value={200} label="Total families reached by our help" suffix="+" />
               </div>
               {/* Stat 4 with yellow dot */}
               <div className="relative">
                 <div className="absolute -left-2 -top-2 w-10 h-10 bg-sunset-gold/30 rounded-full blur-sm"></div>
-                <StatBlock value={830} label="Volunteer teachers active in our spaces" suffix="" />
+                <StatBlock value={150} label="Volunteer teachers active in our spaces" suffix="+" />
               </div>
             </div>
           </motion.div>
