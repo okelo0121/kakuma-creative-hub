@@ -71,10 +71,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-4 w-full z-50 px-4">
-      <nav className={cn(
-        "mx-auto max-w-6xl border border-border bg-background/90 backdrop-blur-md shadow-lg shadow-black/5 supports-[backdrop-filter]:bg-background/70 transition-all duration-300",
-        mobileOpen ? "rounded-3xl" : "rounded-full"
-      )}>
+      <nav className="mx-auto max-w-6xl border border-border bg-background/90 backdrop-blur-md shadow-lg shadow-black/5 supports-[backdrop-filter]:bg-background/70 rounded-3xl md:rounded-full">
         <div className="flex items-center justify-between py-2 px-4 md:px-6">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" onClick={closeAll}>
