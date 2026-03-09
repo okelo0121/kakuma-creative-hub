@@ -11,7 +11,9 @@ import education2 from "@/assets/Education & Remedial Learning-20260228T182214Z-
 import education3 from "@/assets/Education & Remedial Learning-20260228T182214Z-1-001/Education & Remedial Learning/WhatsApp Image 2026-02-07 at 10.22.20 (1).jpeg";
 import environment1 from "@/assets/Environmental Initiatives-20260228T182222Z-1-001/Environmental Initiatives/IMG_1801.jpg";
 import environment2 from "@/assets/Environmental Initiatives-20260228T182222Z-1-001/Environmental Initiatives/IMG_1804.jpg";
+// @ts-ignore
 import peace1 from "@/assets/Peace Bulding-20260228T182226Z-1-001/Peace Bulding/IMG_0477.JPG";
+// @ts-ignore
 import peace2 from "@/assets/Peace Bulding-20260228T182226Z-1-001/Peace Bulding/IMG_0496.JPG";
 import storytelling1 from "@/assets/Storytelling & Media-20260228T182229Z-1-001/Storytelling & Media/WhatsApp Image 2026-02-07 at 11.10.32.jpeg";
 import storytelling2 from "@/assets/Storytelling & Media-20260228T182229Z-1-001/Storytelling & Media/WhatsApp Image 2026-02-07 at 11.11.02.jpeg";
